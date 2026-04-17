@@ -96,7 +96,7 @@ export function Dashboard() {
     }
   };
 
-  const handleLogout = async() => {
+  const handleLogout = async () => {
     await supabase.auth.signOut();
     navigate('/login');
   };
@@ -148,7 +148,7 @@ export function Dashboard() {
         >
           <div>
             <h1 className="text-white-600-3xl mb-2">Complaint Management</h1>
-            <p className="text-white-600">Track and resolve hostel complaints efficiently</p>
+            <p className="text-white">Track and resolve hostel complaints efficiently</p>
           </div>
           <button
             onClick={handleLogout}
